@@ -1,0 +1,17 @@
+# Production environment override
+services:
+  php:
+    build:
+      context: ./api
+      target: frankenphp_prod
+    environment:
+      APP_SECRET: ${APP_SECRET}
+
+  spa:
+    build:
+      context: ./spa
+      target: prod
+
+  database:
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}

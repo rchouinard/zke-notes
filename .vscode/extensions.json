@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "bmewburn.vscode-intelephense-client",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "junstyle.php-cs-fixer",
+    "vue.volar",
+    "wayou.vscode-todo-highlight",
+    "whatwedo.twig",
+    "xdebug.php-debug"
+  ],
+  "unwantedRecommendations": [
+    "dbaeumer.jshint",
+    "hookyqr.beautify",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "octref.vetur"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.formatOnSave": true,
+  "editor.rulers": [80, 120],
+  // eslint
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+  "eslint.enable": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
+  "eslint.workingDirectories": ["spa"],
+  // prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.configPath": "spa/.prettierrc.json",
+  // typescript
+  "js/ts.tsdk.path": "spa/node_modules/typescript/lib",
+  // php
+  "intelephense.environment.includePaths": ["api/vendor"],
+  "php.suggest.basic": false, // disable built-in suggestions in favor of intelephense
+  "php-cs-fixer.executablePath": "${workspaceFolder}/api/vendor/bin/php-cs-fixer",
+  "php-cs-fixer.executablePathWindows": "${workspaceFolder}/api/vendor/bin/php-cs-fixer.bat",
+  "php-cs-fixer.config": "api/.php-cs-fixer.dist.php",
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  },
+  // exclude from search and explorer
+  "files.exclude": {
+    "**/.pnpm-store": true,
+    "**/node_modules": true,
+    "**/vendor": true
+  }
+}
