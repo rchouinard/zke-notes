@@ -1,5 +1,6 @@
 import { defineStore } from '#q-app/wrappers';
 import { createPinia } from 'pinia';
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
 
 /*
  * When adding new properties to stores, you should also
@@ -25,8 +26,8 @@ declare module 'pinia' {
 export default defineStore((/* { ssrContext } */) => {
   const pinia = createPinia();
 
-  // You can add Pinia plugins here
-  // pinia.use(SomePiniaPlugin)
+  // Persist opted-in stores to sessionStorage (see authStore.ts).
+  pinia.use(piniaPluginPersistedstate);
 
   return pinia;
 });
